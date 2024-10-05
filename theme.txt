@@ -1,0 +1,43 @@
+# GRUB2 custom theme by lensdeer.
+# Designed for 1366*768px resolutions.
+
+# Globals
+title-text: ""
+desktop-image: "GRUB.png"
+desktop-image-h-align: "right"
+desktop-image-v-align: "bottom"
+desktop-image-scale-method: "padding"
+desktop-color: "#282828"
+message-color: "#ebdbb2"
+terminal-box: "border_*.png"
+terminal-left: "24"
+terminal-top: "48"
+
++ boot_menu {
+	left = 50%-408
+	top = 256
+	width = 656
+	height = 192
+	selected_item_color = "#282828"
+	selected_item_pixmap_style = "selected_*.png"
+	item_height = 16
+	item_padding = 8
+	item_color = "#ebdbb2"
+	item_spacing = 0
+	item_icon_space = 0
+	icon_width = 0
+	icon_height = 0
+	menu_pixmap_style = "border_*.png"
+}
+
++ progress_bar {
+	left = 50%-400
+	top = 416
+	width = 640
+	height = 16
+	id = "__timeout__"
+	fg_color = "#ebdbb2"
+	bg_color = "#282828"
+	border_color = "#282828"
+	text = ""
+}
